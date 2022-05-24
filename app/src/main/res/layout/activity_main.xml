@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/btnChupAnh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chụp ảnh" />
+
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Album"></TextView>
+        <Spinner
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:spinnerMode="dropdown"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinneralbum"></Spinner>
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/hinhsetup"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/imagemain" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_marginRight="10dp"
+            android:id="@+id/btnLuu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lưu ảnh" />
+
+        <Button
+            android:id="@+id/btnHuy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hủy" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_marginRight="10dp"
+            android:id="@+id/btnXemalbum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Xem AlBum" />
+        <Button
+            android:id="@+id/btnTaoalbum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tạo AlBum" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
